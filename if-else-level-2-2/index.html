@@ -8,11 +8,15 @@
 </head>
 <body>
     <div class="warning">
-    <form onsubmit="checkAirQuality();">
-    <input onclick="" type="range" min="0" max="150" step="10" value="0" class="range"/>
+    <form onsubmit="checkAirQuality(); return false">
+    <h2>Luftqualität:<span class="quality"></span></h2>
+    <input type="range" min="0" max="150" step="10" value="0" class="range"/>
+    <input type="submit">
+</form>
     <h2>Level of Health concern: <span class="concern"></span></h2>
     <h2>Level of health effect: <span class="effect"></span></h2>
-</form>
+    
+
     </div>
 </body>
 <footer>

@@ -1,11 +1,13 @@
 function checkAirQuality() {
     let qualityInput = Number(document.querySelector(".range").value);
+    let quality = document.querySelector(".quality");
+    quality.innerHTML = qualityInput;
     let concern = document.querySelector(".concern");
     let effect = document.querySelector(".effect");
     if (qualityInput <= 50) {
         concern.innherHTML = "Good Level of health";
         effect.innherHTML = "Little or no risk";
-    } else if (qualityInput >50 && qualityInput <= 100) {
+    } else if (qualityInput > 50 && qualityInput <= 100) {
         concern.innherHTML = "Moderate Level of health";
         effect.innherHTML = "Acceptable quality";
     } else if (qualityInput > 100 && qualityInput <= 150) {
